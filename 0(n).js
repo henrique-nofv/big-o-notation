@@ -5,15 +5,15 @@
 const persons = new Array(10500000).fill('Henrique', -1);
 
 const hasValueInArray = (array, value) => {
-  const startTimePerformance = performance.now()
+  const startTimePerformance = performance.now();
   
   const itemExists = array.some(item => item?.toLowerCase() === value?.toLowerCase());
 
-  const endTimePerformance = performance.now()
+  const endTimePerformance = performance.now();
 
-  console.log(`Running in ${endTimePerformance - startTimePerformance} milliseconds`)
+  console.log(`Running in ${endTimePerformance - startTimePerformance} milliseconds`);
   
-  return itemExists
+  return itemExists;
 }
 
-hasValueInArray(persons, 'Henrique')
+hasValueInArray(persons, 'Henrique');
