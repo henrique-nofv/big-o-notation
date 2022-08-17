@@ -1,5 +1,5 @@
 /*
-  O(n) -> Constant time
+  O(n) -> Linear time
   O número de operações cresce proporcionalmente conforme a quantidade de entradas.
 */
 const persons = new Array(10500000).fill('Henrique', -1);
